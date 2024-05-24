@@ -45,6 +45,9 @@ body {
     background: var(--bg);
 }
 
+section {
+    padding: 2rem 7%;
+}
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -130,6 +133,7 @@ body {
     transform: scaleY(1);
 
 }
+
 .header .search-form input {
     height: 100%;
     width: 100%;
@@ -165,6 +169,7 @@ body {
     background: #fff;
     padding: 0 1.5rem;
 }
+
 .header .cart-items-container.active {
     right: 0;
 }
@@ -200,6 +205,32 @@ body {
     width: 100%;
     text-align: center;
 }
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/images/background-img-2.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
 /* media queries */
 @media (max-width:990px) {
     html {
@@ -208,8 +239,8 @@ body {
 
     .header {
         padding: 1.5rem 2rem;
-    }
-
+    
+}
 }
 
 @media (max-width:768px) {
@@ -243,6 +274,19 @@ body {
         right: 2rem;
     }
 
+    .home  {
+        justify-content: center;
+        text-align: center;
+       
+        background-position: right;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p {
+        font-size: 1.5rem;
+        color: rgb(48, 138, 118)
+    }
 
 }
 
