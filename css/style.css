@@ -48,6 +48,21 @@ body {
 section {
     padding: 2rem 7%;
 }
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom:3.5rem ;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+}
+
+
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -231,6 +246,45 @@ section {
     padding: 1rem 0;
     color: #fff;
 }
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    max-height: 900px;
+    max-width: 900px;
+    width: 100%;
+    
+}
+
+.about .row .about-content{
+    flex: 1 1 46rem;
+    
+    padding: 3rem;
+}
+
+.about .row .about-content h3 {
+    font-size:3rem ;
+    color: whitesmoke;
+    padding-left: 10.8px;
+}
+
+.about .row .about-content p{
+    font-size: 1.6rem;
+    color: whitesmoke;
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+
 /* media queries */
 @media (max-width:990px) {
     html {
